@@ -26,9 +26,7 @@ rel="stylesheet">
 
 <div class="loader">
 
-<div class="gold-loader">
-
-</div>
+<div class="gold-loader"></div>
 
 </div>
 
@@ -38,20 +36,18 @@ rel="stylesheet">
 
 <div class="logo">
 
-<span class="gift">
-Gift
-</span>
-
-<span class="wallay">
-Wallay
-</span>
+<img
+src="images/logo.png"
+alt="Gift Wallay">
 
 </div>
 
 <ul class="nav-links">
 
 <li>
-<a href="#">Home</a>
+<a href="#">
+Home
+</a>
 </li>
 
 <li>
@@ -75,10 +71,10 @@ Account
 <li>
 
 <button
-class="cart-open-btn"
+class="cart-btn"
 onclick="openCart()">
 
-Cart
+🛒
 
 <span id="cartCount">
 0
@@ -102,16 +98,16 @@ Cart
 
 PREMIUM<br>
 
-METAL<br>
+GIFT<br>
 
-ARTWORKS
+COLLECTION
 
 </h1>
 
 <p>
 
-Luxury gifts crafted for
-modern interiors.
+Luxury gifts crafted with
+premium quality and elegance.
 
 </p>
 
@@ -125,13 +121,13 @@ SHOP NOW
 
 </section>
 
-<!-- CATEGORIES -->
+<!-- CATEGORY SECTION -->
 
 <section class="categories">
 
 <h2>
 
-Shop Categories
+Shop By Category
 
 </h2>
 
@@ -145,7 +141,7 @@ Shop Categories
 
 <h3>
 
-Anime
+Anime Posters
 
 </h3>
 
@@ -161,7 +157,7 @@ Anime
 
 <h3>
 
-Cars
+Car Posters
 
 </h3>
 
@@ -177,7 +173,7 @@ Cars
 
 <h3>
 
-Gaming
+Gaming Posters
 
 </h3>
 
@@ -202,9 +198,16 @@ Trending Products
 
 <div class="products-grid">
 
+<!-- PRODUCT -->
+
 <div class="product-card">
 
-<img src="images/product1.jpg">
+<div class="product-image">
+
+<img
+src="images/product1.jpg">
+
+</div>
 
 <div class="product-info">
 
@@ -214,43 +217,59 @@ BMW Metal Poster
 
 </h3>
 
-<p>
+<div class="rating">
 
-Rs 4,999
+⭐⭐⭐⭐⭐
+
+<span>
+
+(60 Reviews)
+
+</span>
+
+</div>
+
+<p class="price">
+
+Rs. 9,999
 
 </p>
 
-<button>
+<div class="stock">
+
+🔥 Only 6 left
+
+</div>
+
+<div class="viewing">
+
+🟢 5 people viewing
+
+</div>
+
+<div class="sizes">
+
+<button>Small</button>
+
+<button class="active">
+Medium
+</button>
+
+<button>Large</button>
+
+</div>
+
+<button
+class="add-cart">
 
 Add To Cart
 
 </button>
 
-</div>
+<button
+class="buy-now">
 
-</div>
-
-<div class="product-card">
-
-<img src="images/product2.jpg">
-
-<div class="product-info">
-
-<h3>
-
-Naruto Poster
-
-</h3>
-
-<p>
-
-Rs 3,499
-
-</p>
-
-<button>
-
-Add To Cart
+Buy Now
 
 </button>
 
@@ -275,7 +294,8 @@ Your Cart
 
 </h2>
 
-<button onclick="closeCart()">
+<button
+onclick="closeCart()">
 
 ✕
 
@@ -287,6 +307,20 @@ Your Cart
 
 </div>
 
+<div class="cart-footer">
+
+<h3>
+
+Estimated Total
+
+</h3>
+
+<p id="cartTotal">
+
+Rs.0
+
+</p>
+
 <a href="checkout.html">
 
 <button class="checkout-btn">
@@ -296,6 +330,8 @@ Checkout
 </button>
 
 </a>
+
+</div>
 
 </div>
 
@@ -312,6 +348,28 @@ Customer Reviews
 
 <div id="reviewsContainer">
 
+<div class="review-card">
+
+<h3>
+
+Ali Ahmed
+
+</h3>
+
+<p>
+
+⭐⭐⭐⭐⭐
+
+</p>
+
+<p>
+
+Amazing premium quality.
+
+</p>
+
+</div>
+
 </div>
 
 </section>
@@ -320,15 +378,19 @@ Customer Reviews
 
 <footer>
 
-<h2>
-
-Gift Wallay
-
-</h2>
+<img
+src="images/logo.png"
+class="footer-logo">
 
 <p>
 
-Luxury Premium Store
+Har Tohfa, Dil Se.
+
+</p>
+
+<p>
+
+© 2026 Gift Wallay
 
 </p>
 
@@ -339,4 +401,4 @@ Luxury Premium Store
 </script>
 
 </body>
-</html>
+  </html>
