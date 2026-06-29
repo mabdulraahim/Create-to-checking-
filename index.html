@@ -14,11 +14,8 @@ initial-scale=1.0">
 <link rel="stylesheet"
 href="style.css">
 
-<link rel="preconnect"
-href="https://fonts.googleapis.com">
-
 <link href=
-"https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+"https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
 rel="stylesheet">
 
 </head>
@@ -27,42 +24,43 @@ rel="stylesheet">
 
 <!-- NAVBAR -->
 
-<nav>
+<nav class="navbar">
 
 <div class="logo">
 
-<span>Gift</span> Wallay
+GIFT
+<span>WALLAY</span>
 
 </div>
 
-<ul>
+<ul class="nav-links">
 
-<li>
-<a href="#">Home</a>
-</li>
+<li><a href="#">Home</a></li>
 
-<li>
-<a href="#products">
+<li><a href="#products">
 Products
-</a>
-</li>
+</a></li>
 
-<li>
-<a href="#reviews">
+<li><a href="#reviews">
 Reviews
-</a>
-</li>
+</a></li>
+
+<li><a href="login.html">
+Account
+</a></li>
 
 <li>
-<a href="login.html">
-Login
-</a>
-</li>
 
-<li>
-<a href="cart.html">
+<a href="cart.html"
+class="cart-btn">
+
 Cart
+<span id="cartCount">
+0
+</span>
+
 </a>
+
 </li>
 
 </ul>
@@ -73,78 +71,84 @@ Cart
 
 <section class="hero">
 
+<div class="overlay"></div>
+
 <div class="hero-content">
 
 <h1>
 
-Luxury Gifts<br>
+LUXURY<br>
 
-For Everyone
+METAL<br>
+
+ARTWORKS
 
 </h1>
 
 <p>
 
-Premium products with
-premium experience.
+Premium wall decor
+crafted for luxury interiors.
 
 </p>
 
-<a href="#products">
-
 <button>
 
-Shop Now
+SHOP COLLECTION
 
 </button>
-
-</a>
 
 </div>
 
 </section>
 
-<!-- CATEGORIES -->
+<!-- CATEGORY SECTION -->
 
 <section class="categories">
 
+<div class="category-card">
+
+<img src="images/cat1.jpg">
+
+<div class="category-text">
+
 <h2>
 
-Categories
+Metal Posters
 
 </h2>
 
-<div class="category-container">
-
-<div class="category-card">
-
-<img src="images/watch.jpg">
-
-<p>Watches</p>
+</div>
 
 </div>
 
 <div class="category-card">
 
-<img src="images/shoes.jpg">
+<img src="images/cat2.jpg">
 
-<p>Shoes</p>
+<div class="category-text">
+
+<h2>
+
+Anime Collection
+
+</h2>
+
+</div>
 
 </div>
 
 <div class="category-card">
 
-<img src="images/hoodie.jpg">
+<img src="images/cat3.jpg">
 
-<p>Fashion</p>
+<div class="category-text">
 
-</div>
+<h2>
 
-<div class="category-card">
+Car Posters
 
-<img src="images/glasses.jpg">
-
-<p>Accessories</p>
+</h2>
 
 </div>
 
@@ -159,21 +163,27 @@ id="products">
 
 <h2>
 
-Best Sellers
+TRENDING PRODUCTS
 
 </h2>
 
-<div class="product-container">
+<div class="products-grid">
 
-<!-- PRODUCT 1 -->
+<!-- CARD -->
 
 <div class="product-card">
 
-<img src="images/watch.jpg">
+<div class="product-image">
+
+<img src="images/product1.jpg">
+
+</div>
+
+<div class="product-info">
 
 <h3>
 
-Luxury Watch
+BMW Metal Poster
 
 </h3>
 
@@ -183,109 +193,81 @@ Rs 4,999
 
 </p>
 
-<button
-onclick="addToCart(
-'Luxury Watch',
-4999,
-'images/watch.jpg'
-)">
+<button>
 
-Add To Cart
+ADD TO CART
 
 </button>
 
 </div>
 
-<!-- PRODUCT 2 -->
+</div>
+
+<!-- CARD -->
 
 <div class="product-card">
 
-<img src="images/shoes.jpg">
+<div class="product-image">
+
+<img src="images/product2.jpg">
+
+</div>
+
+<div class="product-info">
 
 <h3>
 
-Premium Shoes
+Naruto Wall Art
 
 </h3>
 
 <p class="price">
 
-Rs 6,500
+Rs 3,499
 
 </p>
 
-<button
-onclick="addToCart(
-'Premium Shoes',
-6500,
-'images/shoes.jpg'
-)">
+<button>
 
-Add To Cart
+ADD TO CART
 
 </button>
 
 </div>
 
-<!-- PRODUCT 3 -->
+</div>
+
+<!-- CARD -->
 
 <div class="product-card">
 
-<img src="images/hoodie.jpg">
+<div class="product-image">
+
+<img src="images/product3.jpg">
+
+</div>
+
+<div class="product-info">
 
 <h3>
 
-Fashion Hoodie
+Gaming Room Poster
 
 </h3>
 
 <p class="price">
 
-Rs 2,999
+Rs 5,999
 
 </p>
 
-<button
-onclick="addToCart(
-'Fashion Hoodie',
-2999,
-'images/hoodie.jpg'
-)">
+<button>
 
-Add To Cart
+ADD TO CART
 
 </button>
 
 </div>
-
-<!-- PRODUCT 4 -->
-
-<div class="product-card">
-
-<img src="images/glasses.jpg">
-
-<h3>
-
-Golden Glasses
-
-</h3>
-
-<p class="price">
-
-Rs 1,999
-
-</p>
-
-<button
-onclick="addToCart(
-'Golden Glasses',
-1999,
-'images/glasses.jpg'
-)">
-
-Add To Cart
-
-</button>
 
 </div>
 
@@ -300,7 +282,7 @@ id="reviews">
 
 <h2>
 
-Customer Reviews
+CUSTOMER REVIEWS
 
 </h2>
 
@@ -310,72 +292,31 @@ Customer Reviews
 
 </section>
 
-<!-- REVIEW FORM -->
-
-<section class="review-form">
-
-<h2>
-
-Add Review
-
-</h2>
-
-<input type="text"
-id="reviewName"
-placeholder="Your Name">
-
-<select id="rating">
-
-<option>5</option>
-<option>4</option>
-<option>3</option>
-<option>2</option>
-<option>1</option>
-
-</select>
-
-<textarea
-id="reviewText"
-placeholder="Write Review">
-</textarea>
-
-<button
-onclick="submitReview()">
-
-Submit Review
-
-</button>
-
-</section>
-
 <!-- FOOTER -->
 
 <footer>
 
 <h2>
 
-Gift Wallay
+GIFT WALLAY
 
 </h2>
 
 <p>
 
-Premium Luxury Store
+Luxury Premium Store
 
 </p>
 
 <p>
 
-WhatsApp:
-+92 300 1234567
+© 2026 Gift Wallay
 
 </p>
 
 </footer>
 
-<script src="script.js">
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
