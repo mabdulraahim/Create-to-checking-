@@ -2,18 +2,23 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+content="width=device-width,
+initial-scale=1.0">
 
-<title>GlowCart</title>
+<title>Gift Wallay</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="style.css">
 
 <link rel="preconnect"
 href="https://fonts.googleapis.com">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+<link href=
+"https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
 rel="stylesheet">
 
 </head>
@@ -25,16 +30,40 @@ rel="stylesheet">
 <nav>
 
 <div class="logo">
-GlowCart
+
+<span>Gift</span> Wallay
+
 </div>
 
 <ul>
 
-<li><a href="#">Home</a></li>
-<li><a href="#">Shop</a></li>
-<li><a href="#">Categories</a></li>
-<li><a href="#">Reviews</a></li>
-<li><a href="#">Contact</a></li>
+<li>
+<a href="#">Home</a>
+</li>
+
+<li>
+<a href="#products">
+Products
+</a>
+</li>
+
+<li>
+<a href="#reviews">
+Reviews
+</a>
+</li>
+
+<li>
+<a href="login.html">
+Login
+</a>
+</li>
+
+<li>
+<a href="cart.html">
+Cart
+</a>
+</li>
 
 </ul>
 
@@ -44,21 +73,32 @@ GlowCart
 
 <section class="hero">
 
-<div class="hero-text">
+<div class="hero-content">
 
 <h1>
-Shop.<br>
-Style.<br>
-<span>Shine.</span>
+
+Luxury Gifts<br>
+
+For Everyone
+
 </h1>
 
 <p>
-Premium products for your lifestyle.
+
+Premium products with
+premium experience.
+
 </p>
 
-<button onclick="scrollToProducts()">
+<a href="#products">
+
+<button>
+
 Shop Now
+
 </button>
+
+</a>
 
 </div>
 
@@ -68,28 +108,44 @@ Shop Now
 
 <section class="categories">
 
-<h2>Categories</h2>
+<h2>
+
+Categories
+
+</h2>
 
 <div class="category-container">
 
-<div class="cat">
-<img src="images/shoes.jpg">
-<p>Shoes</p>
-</div>
+<div class="category-card">
 
-<div class="cat">
 <img src="images/watch.jpg">
+
 <p>Watches</p>
+
 </div>
 
-<div class="cat">
+<div class="category-card">
+
+<img src="images/shoes.jpg">
+
+<p>Shoes</p>
+
+</div>
+
+<div class="category-card">
+
 <img src="images/hoodie.jpg">
+
 <p>Fashion</p>
+
 </div>
 
-<div class="cat">
+<div class="category-card">
+
 <img src="images/glasses.jpg">
+
 <p>Accessories</p>
+
 </div>
 
 </div>
@@ -98,84 +154,137 @@ Shop Now
 
 <!-- PRODUCTS -->
 
-<section class="products" id="products">
+<section class="products"
+id="products">
 
-<h2>Best Sellers</h2>
+<h2>
+
+Best Sellers
+
+</h2>
 
 <div class="product-container">
 
-<div class="card">
+<!-- PRODUCT 1 -->
+
+<div class="product-card">
 
 <img src="images/watch.jpg">
 
-<h3>Luxury Watch</h3>
+<h3>
+
+Luxury Watch
+
+</h3>
 
 <p class="price">
+
 Rs 4,999
+
 </p>
 
 <button
-onclick="orderNow(
+onclick="addToCart(
 'Luxury Watch',
-4999)">
-Buy Now
+4999,
+'images/watch.jpg'
+)">
+
+Add To Cart
+
 </button>
 
 </div>
 
-<div class="card">
+<!-- PRODUCT 2 -->
+
+<div class="product-card">
 
 <img src="images/shoes.jpg">
 
-<h3>Stylish Shoes</h3>
+<h3>
+
+Premium Shoes
+
+</h3>
 
 <p class="price">
+
 Rs 6,500
+
 </p>
 
 <button
-onclick="orderNow(
-'Stylish Shoes',
-6500)">
-Buy Now
+onclick="addToCart(
+'Premium Shoes',
+6500,
+'images/shoes.jpg'
+)">
+
+Add To Cart
+
 </button>
 
 </div>
 
-<div class="card">
+<!-- PRODUCT 3 -->
+
+<div class="product-card">
 
 <img src="images/hoodie.jpg">
 
-<h3>Fashion Hoodie</h3>
+<h3>
+
+Fashion Hoodie
+
+</h3>
 
 <p class="price">
+
 Rs 2,999
+
 </p>
 
 <button
-onclick="orderNow(
+onclick="addToCart(
 'Fashion Hoodie',
-2999)">
-Buy Now
+2999,
+'images/hoodie.jpg'
+)">
+
+Add To Cart
+
 </button>
 
 </div>
 
-<div class="card">
+<!-- PRODUCT 4 -->
+
+<div class="product-card">
 
 <img src="images/glasses.jpg">
 
-<h3>Premium Glasses</h3>
+<h3>
+
+Golden Glasses
+
+</h3>
 
 <p class="price">
+
 Rs 1,999
+
 </p>
 
 <button
-onclick="orderNow(
-'Premium Glasses',
-1999)">
-Buy Now
+onclick="addToCart(
+'Golden Glasses',
+1999,
+'images/glasses.jpg'
+)">
+
+Add To Cart
+
 </button>
 
 </div>
@@ -186,44 +295,56 @@ Buy Now
 
 <!-- REVIEWS -->
 
-<section class="reviews">
+<section class="reviews"
+id="reviews">
 
-<h2>Customer Reviews</h2>
+<h2>
 
-<div class="review-box">
-<h3>Ali Khan</h3>
-<p>⭐⭐⭐⭐⭐</p>
-<p>Excellent quality!</p>
-</div>
+Customer Reviews
 
-<div class="review-box">
-<h3>Ahmed</h3>
-<p>⭐⭐⭐⭐⭐</p>
-<p>Fast delivery.</p>
+</h2>
+
+<div id="reviewsContainer">
+
 </div>
 
 </section>
 
-<!-- ADD REVIEW -->
+<!-- REVIEW FORM -->
 
-<section class="add-review">
+<section class="review-form">
 
-<h2>Add Review</h2>
+<h2>
+
+Add Review
+
+</h2>
 
 <input type="text"
-id="name"
+id="reviewName"
 placeholder="Your Name">
 
+<select id="rating">
+
+<option>5</option>
+<option>4</option>
+<option>3</option>
+<option>2</option>
+<option>1</option>
+
+</select>
+
 <textarea
-id="review"
+id="reviewText"
 placeholder="Write Review">
 </textarea>
 
-<button onclick="addReview()">
-Submit Review
-</button>
+<button
+onclick="submitReview()">
 
-<div id="reviewContainer"></div>
+Submit Review
+
+</button>
 
 </section>
 
@@ -231,21 +352,30 @@ Submit Review
 
 <footer>
 
-<h2>GlowCart</h2>
+<h2>
+
+Gift Wallay
+
+</h2>
 
 <p>
-Premium Instagram Store
+
+Premium Luxury Store
+
 </p>
 
 <p>
+
 WhatsApp:
 +92 300 1234567
+
 </p>
 
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js">
+
+</script>
 
 </body>
-  </html>
-  
+</html>
