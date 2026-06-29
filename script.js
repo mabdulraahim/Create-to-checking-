@@ -1,79 +1,68 @@
-function scrollToProducts(){
+function openCart(){
 
 document
-.getElementById("products")
-.scrollIntoView({
-behavior:"smooth"
+.getElementById("cartDrawer")
+.classList.add("active");
+
+}
+
+function closeCart(){
+
+document
+.getElementById("cartDrawer")
+.classList.remove("active");
+
+}
+
+let cart = [];
+
+function addToCart(
+name,
+price,
+image
+){
+
+cart.push({
+
+name,
+price,
+image
+
 });
 
+document
+.getElementById("cartCount")
+.innerText = cart.length;
+
+renderCart();
+
 }
 
-function orderNow(product,price){
+function renderCart(){
 
-let customerName =
-prompt("Enter Your Name");
-
-let customerPhone =
-prompt("Enter Your Phone Number");
-
-let customerAddress =
-prompt("Enter Your Address");
-
-let message =
-"NEW ORDER%0A%0A" +
-
-"Product: " +
-product +
-
-"%0APrice: Rs " +
-price +
-
-"%0AName: " +
-customerName +
-
-"%0APhone: " +
-customerPhone +
-
-"%0AAddress: " +
-customerAddress;
-
-window.open(
-"https://wa.me/923001234567?text="
-+ message,
-"_blank"
+let cartItems =
+document.getElementById(
+"cartItems"
 );
 
-}
+cartItems.innerHTML = "";
 
-function addReview(){
+cart.forEach(item=>{
 
-let name =
-document
-.getElementById("name")
-.value;
+cartItems.innerHTML += `
 
-let review =
-document
-.getElementById("review")
-.value;
+<div class="cart-item">
 
-let box =
-document.createElement("div");
+<img src="${item.image}">
 
-box.classList.add("review-box");
+<h3>${item.name}</h3>
 
-box.innerHTML = `
+<p>Rs ${item.price}</p>
 
-<h3>${name}</h3>
-
-<p>⭐⭐⭐⭐⭐</p>
-
-<p>${review}</p>
+</div>
 
 `;
 
-document
-.getElementById("reviewContainer")
-.appendChild(box);
+});
 
 }
