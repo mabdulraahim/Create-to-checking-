@@ -22,44 +22,69 @@ rel="stylesheet">
 
 <body>
 
+<!-- LOADER -->
+
+<div class="loader">
+
+<div class="gold-loader">
+
+</div>
+
+</div>
+
 <!-- NAVBAR -->
 
 <nav class="navbar">
 
 <div class="logo">
 
-GIFT
-<span>WALLAY</span>
+<span class="gift">
+Gift
+</span>
+
+<span class="wallay">
+Wallay
+</span>
 
 </div>
 
 <ul class="nav-links">
 
-<li><a href="#">Home</a></li>
+<li>
+<a href="#">Home</a>
+</li>
 
-<li><a href="#products">
+<li>
+<a href="#products">
 Products
-</a></li>
+</a>
+</li>
 
-<li><a href="#reviews">
+<li>
+<a href="#reviews">
 Reviews
-</a></li>
+</a>
+</li>
 
-<li><a href="login.html">
+<li>
+<a href="login.html">
 Account
-</a></li>
+</a>
+</li>
 
 <li>
 
-<a href="cart.html"
-class="cart-btn">
+<button
+class="cart-open-btn"
+onclick="openCart()">
 
 Cart
+
 <span id="cartCount">
 0
 </span>
 
-</a>
+</button>
 
 </li>
 
@@ -71,13 +96,11 @@ Cart
 
 <section class="hero">
 
-<div class="overlay"></div>
-
 <div class="hero-content">
 
 <h1>
 
-LUXURY<br>
+PREMIUM<br>
 
 METAL<br>
 
@@ -87,14 +110,14 @@ ARTWORKS
 
 <p>
 
-Premium wall decor
-crafted for luxury interiors.
+Luxury gifts crafted for
+modern interiors.
 
 </p>
 
 <button>
 
-SHOP COLLECTION
+SHOP NOW
 
 </button>
 
@@ -102,21 +125,29 @@ SHOP COLLECTION
 
 </section>
 
-<!-- CATEGORY SECTION -->
+<!-- CATEGORIES -->
 
 <section class="categories">
+
+<h2>
+
+Shop Categories
+
+</h2>
+
+<div class="category-grid">
 
 <div class="category-card">
 
 <img src="images/cat1.jpg">
 
-<div class="category-text">
+<div class="overlay">
 
-<h2>
+<h3>
 
-Metal Posters
+Anime
 
-</h2>
+</h3>
 
 </div>
 
@@ -126,13 +157,13 @@ Metal Posters
 
 <img src="images/cat2.jpg">
 
-<div class="category-text">
+<div class="overlay">
 
-<h2>
+<h3>
 
-Anime Collection
+Cars
 
-</h2>
+</h3>
 
 </div>
 
@@ -142,13 +173,15 @@ Anime Collection
 
 <img src="images/cat3.jpg">
 
-<div class="category-text">
+<div class="overlay">
 
-<h2>
+<h3>
 
-Car Posters
+Gaming
 
-</h2>
+</h3>
+
+</div>
 
 </div>
 
@@ -163,21 +196,15 @@ id="products">
 
 <h2>
 
-TRENDING PRODUCTS
+Trending Products
 
 </h2>
 
 <div class="products-grid">
 
-<!-- CARD -->
-
 <div class="product-card">
 
-<div class="product-image">
-
 <img src="images/product1.jpg">
-
-</div>
 
 <div class="product-info">
 
@@ -187,7 +214,7 @@ BMW Metal Poster
 
 </h3>
 
-<p class="price">
+<p>
 
 Rs 4,999
 
@@ -195,7 +222,7 @@ Rs 4,999
 
 <button>
 
-ADD TO CART
+Add To Cart
 
 </button>
 
@@ -203,25 +230,19 @@ ADD TO CART
 
 </div>
 
-<!-- CARD -->
-
 <div class="product-card">
 
-<div class="product-image">
-
 <img src="images/product2.jpg">
-
-</div>
 
 <div class="product-info">
 
 <h3>
 
-Naruto Wall Art
+Naruto Poster
 
 </h3>
 
-<p class="price">
+<p>
 
 Rs 3,499
 
@@ -229,41 +250,7 @@ Rs 3,499
 
 <button>
 
-ADD TO CART
-
-</button>
-
-</div>
-
-</div>
-
-<!-- CARD -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="images/product3.jpg">
-
-</div>
-
-<div class="product-info">
-
-<h3>
-
-Gaming Room Poster
-
-</h3>
-
-<p class="price">
-
-Rs 5,999
-
-</p>
-
-<button>
-
-ADD TO CART
+Add To Cart
 
 </button>
 
@@ -275,6 +262,43 @@ ADD TO CART
 
 </section>
 
+<!-- CART DRAWER -->
+
+<div class="cart-drawer"
+id="cartDrawer">
+
+<div class="cart-header">
+
+<h2>
+
+Your Cart
+
+</h2>
+
+<button onclick="closeCart()">
+
+✕
+
+</button>
+
+</div>
+
+<div id="cartItems">
+
+</div>
+
+<a href="checkout.html">
+
+<button class="checkout-btn">
+
+Checkout
+
+</button>
+
+</a>
+
+</div>
+
 <!-- REVIEWS -->
 
 <section class="reviews"
@@ -282,7 +306,7 @@ id="reviews">
 
 <h2>
 
-CUSTOMER REVIEWS
+Customer Reviews
 
 </h2>
 
@@ -298,7 +322,7 @@ CUSTOMER REVIEWS
 
 <h2>
 
-GIFT WALLAY
+Gift Wallay
 
 </h2>
 
@@ -308,15 +332,11 @@ Luxury Premium Store
 
 </p>
 
-<p>
-
-© 2026 Gift Wallay
-
-</p>
-
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js">
+
+</script>
 
 </body>
 </html>
