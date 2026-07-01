@@ -26,7 +26,9 @@ rel="stylesheet">
 
 <div class="loader">
 
-<div class="gold-loader"></div>
+<div class="gold-loader">
+
+</div>
 
 </div>
 
@@ -38,34 +40,50 @@ rel="stylesheet">
 
 <img
 src="images/logo.png"
-alt="Gift Wallay">
+alt="Gift Wallay Logo">
 
 </div>
 
 <ul class="nav-links">
 
 <li>
+
 <a href="#">
 Home
 </a>
+
 </li>
 
 <li>
+
+<a href="#categories">
+Categories
+</a>
+
+</li>
+
+<li>
+
 <a href="#products">
 Products
 </a>
+
 </li>
 
 <li>
+
 <a href="#reviews">
 Reviews
 </a>
+
 </li>
 
 <li>
+
 <a href="login.html">
 Account
 </a>
+
 </li>
 
 <li>
@@ -77,7 +95,9 @@ onclick="openCart()">
 🛒
 
 <span id="cartCount">
+
 0
+
 </span>
 
 </button>
@@ -88,7 +108,7 @@ onclick="openCart()">
 
 </nav>
 
-<!-- HERO -->
+<!-- HERO SECTION -->
 
 <section class="hero">
 
@@ -111,9 +131,41 @@ premium quality and elegance.
 
 </p>
 
-<button>
+<div class="hero-buttons">
+
+<button class="shop-btn">
 
 SHOP NOW
+
+</button>
+
+<button class="explore-btn">
+
+EXPLORE
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SEARCH BAR -->
+
+<section class="search-section">
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Products..."
+onkeyup="searchProducts()">
+
+<button>
+
+Search
 
 </button>
 
@@ -121,9 +173,10 @@ SHOP NOW
 
 </section>
 
-<!-- CATEGORY SECTION -->
+<!-- CATEGORIES -->
 
-<section class="categories">
+<section class="categories"
+id="categories">
 
 <h2>
 
@@ -198,7 +251,7 @@ Trending Products
 
 <div class="products-grid">
 
-<!-- PRODUCT -->
+<!-- PRODUCT 1 -->
 
 <div class="product-card">
 
@@ -223,7 +276,7 @@ BMW Metal Poster
 
 <span>
 
-(60 Reviews)
+(64 Reviews)
 
 </span>
 
@@ -237,30 +290,215 @@ Rs. 9,999
 
 <div class="stock">
 
-🔥 Only 6 left
+🔥 Only 5 Left
 
 </div>
 
 <div class="viewing">
 
-🟢 5 people viewing
+🟢 8 People Viewing
 
 </div>
 
 <div class="sizes">
 
-<button>Small</button>
+<button>
+Small
+</button>
 
 <button class="active">
 Medium
 </button>
 
-<button>Large</button>
+<button>
+Large
+</button>
 
 </div>
 
 <button
-class="add-cart">
+class="add-cart"
+onclick="addToCart(
+'BMW Metal Poster',
+9999,
+'images/product1.jpg'
+)">
+
+Add To Cart
+
+</button>
+
+<button
+class="buy-now">
+
+Buy Now
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="images/product2.jpg">
+
+</div>
+
+<div class="product-info">
+
+<h3>
+
+Naruto Metal Poster
+
+</h3>
+
+<div class="rating">
+
+⭐⭐⭐⭐⭐
+
+<span>
+
+(92 Reviews)
+
+</span>
+
+</div>
+
+<p class="price">
+
+Rs. 7,499
+
+</p>
+
+<div class="stock">
+
+🔥 Only 3 Left
+
+</div>
+
+<div class="viewing">
+
+🟢 4 People Viewing
+
+</div>
+
+<div class="sizes">
+
+<button>
+Small
+</button>
+
+<button class="active">
+Medium
+</button>
+
+<button>
+Large
+</button>
+
+</div>
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Naruto Metal Poster',
+7499,
+'images/product2.jpg'
+)">
+
+Add To Cart
+
+</button>
+
+<button
+class="buy-now">
+
+Buy Now
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="images/product3.jpg">
+
+</div>
+
+<div class="product-info">
+
+<h3>
+
+Gaming Setup Poster
+
+</h3>
+
+<div class="rating">
+
+⭐⭐⭐⭐⭐
+
+<span>
+
+(38 Reviews)
+
+</span>
+
+</div>
+
+<p class="price">
+
+Rs. 5,999
+
+</p>
+
+<div class="stock">
+
+🔥 Only 7 Left
+
+</div>
+
+<div class="viewing">
+
+🟢 6 People Viewing
+
+</div>
+
+<div class="sizes">
+
+<button>
+Small
+</button>
+
+<button class="active">
+Medium
+</button>
+
+<button>
+Large
+</button>
+
+</div>
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Gaming Setup Poster',
+5999,
+'images/product3.jpg'
+)">
 
 Add To Cart
 
@@ -364,13 +602,66 @@ Ali Ahmed
 
 <p>
 
-Amazing premium quality.
+Amazing quality and
+premium packaging.
+
+</p>
+
+</div>
+
+<div class="review-card">
+
+<h3>
+
+Hamza Khan
+
+</h3>
+
+<p>
+
+⭐⭐⭐⭐⭐
+
+</p>
+
+<p>
+
+Very premium look.
+Loved it.
 
 </p>
 
 </div>
 
 </div>
+
+</section>
+
+<!-- REVIEW FORM -->
+
+<section class="review-form">
+
+<h2>
+
+Add Your Review
+
+</h2>
+
+<input
+type="text"
+id="reviewName"
+placeholder="Your Name">
+
+<textarea
+id="reviewText"
+placeholder="Write Your Review">
+</textarea>
+
+<button
+onclick="submitReview()">
+
+Submit Review
+
+</button>
 
 </section>
 
